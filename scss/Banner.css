@@ -1,0 +1,309 @@
+.art-top-bg {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-position: center;
+  height: 400px;
+  background-size: cover;
+}
+
+.art-top-bg .art-top-bg-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgba(30, 30, 40, 0.93) 0%, rgba(30, 30, 40, 0.96) 70%, rgba(30, 30, 40, 0.99) 80%, rgb(30, 30, 40) 100%);
+}
+
+/* art banner */
+.art-banner-back {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: -30px;
+  width: 90%;
+  height: 30px;
+  margin-left: 5%;
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: rgba(30, 30, 40, 0.88);
+}
+
+.art-banner {
+  transition: 0.55s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+  z-index: 999;
+}
+
+.art-banner .art-banner-overlay {
+  position: relative;
+  display: flex;
+  padding: 60px;
+  width: 100%;
+  background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0.7) 100%);
+}
+
+.art-banner .art-banner-overlay.art-side-overlay {
+  background-image: linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0) 100%);
+}
+
+.art-banner .art-banner-overlay .art-banner-title {
+  width: 100%;
+  align-self: center;
+}
+
+.art-banner .art-banner-overlay .art-banner-title h1 {
+  color: rgb(250, 250, 252);
+}
+
+.art-banner .art-banner-overlay .art-banner-photo {
+  width: 390px;
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.art-btn {
+  text-transform: uppercase;
+  box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
+  color: rgb(32, 32, 42);
+  background: #FFC107;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  border: none;
+  transition: 0.4s ease-in-out;
+}
+
+.art-btn span {
+  align-self: center;
+  transition: 0.2s ease-in-out;
+}
+
+.art-btn.art-btn-md {
+  height: 45px;
+  font-size: 11px;
+  padding: 0 35px;
+}
+
+.art-btn.art-btn-sm {
+  height: 40px;
+  font-size: 11px;
+  padding: 0 30px;
+}
+
+.art-btn:hover {
+  transform: translateY(-2px);
+  color: rgb(30, 30, 40);
+}
+
+/* ------------------------------
+
+space
+
+------------------------------ */
+.p-30-0 {
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.p-0-30 {
+  padding-top: 0;
+  padding-bottom: 30px;
+}
+
+.p-30-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.p-30-15 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.p-15-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.p-15-0 {
+  padding-top: 15px;
+  padding-bottom: 0;
+}
+
+.p-60-0 {
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+
+.p-230-0 {
+  padding-top: 230px;
+  padding-bottom: 0;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-30 {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 1400px) {
+  .p-lg-30-0 {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 920px) {
+  .p-md-15-0 {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+}
+/*content (after 920px)
+
+------------------------------ */
+@media (max-width: 920px) {
+  .art-banner .art-banner-overlay {
+    padding: 60px 30px;
+  }
+  .art-banner .art-banner-overlay .art-banner-title {
+    text-align: center;
+  }
+  .art-banner .art-banner-overlay .art-banner-title h1 {
+    color: rgb(250, 250, 252);
+    font-size: 46px;
+  }
+  .art-banner .art-banner-overlay .art-banner-title .art-buttons-frame {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .art-banner .art-banner-overlay .art-banner-title .art-buttons-frame a {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .art-banner .art-banner-overlay .art-banner-title .art-buttons-frame a:first-child {
+    margin-bottom: 15px;
+  }
+  .art-code {
+    min-height: 70px;
+    margin-bottom: 0;
+  }
+  .art-timeline .art-timeline-content {
+    margin-right: 30px;
+  }
+  .fancybox-container {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .fancybox-toolbar {
+    width: 100vw;
+  }
+  .fancybox-navigation {
+    width: 100%;
+    position: absolute;
+    bottom: 35px;
+  }
+}
+/* ------------------------------
+
+content (after 768px)
+
+------------------------------ */
+@media (max-width: 768px) {
+  .art-section-title {
+    flex-direction: column;
+  }
+  .art-section-title .art-right-frame {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .art-grid.art-grid-2-col .art-grid-item {
+    width: 100%;
+  }
+  .art-grid.art-grid-3-col .art-grid-item {
+    width: 100%;
+  }
+  .art-filter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .art-filter a {
+    margin: 0 0 10px;
+  }
+  .art-m-hidden {
+    display: none;
+  }
+}
+/* ------------------------------
+
+content (after 500px)
+
+------------------------------ */
+@media (max-width: 500px) {
+  .art-section-title {
+    flex-direction: column;
+  }
+  .art-section-title .art-right-frame {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .art-grid.art-grid-2-col .art-grid-item {
+    width: 100%;
+  }
+  .art-grid.art-grid-3-col .art-grid-item {
+    width: 100%;
+  }
+}
+/* ----- container ----- */
+.container-fluid {
+  overflow: hidden;
+  padding: 0 30px;
+  position: relative;
+}
+
+/* ----- buttons frame ----- */
+.art-buttons-frame a {
+  margin-right: 15px;
+}
+
+/* ----- text config ----- */
+.art-sm-text {
+  font-size: 11px;
+}
+
+.art-lg-text {
+  font-size: 16px;
+}
+
+.art-white {
+  color: rgb(250, 250, 252);
+}/*# sourceMappingURL=Banner.css.map */
